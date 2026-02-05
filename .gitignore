@@ -1,0 +1,27 @@
+# Virtual environment
+ll_env/
+venv/
+env/
+
+# Database
+db.sqlite3
+
+# Environment variables
+.env
+*.env
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+
+# IDE
+.vscode/
+.idea/
+.DS_Store
+
+# Logs
+*.log
