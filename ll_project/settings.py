@@ -137,6 +137,10 @@ USE_TZ = True
 STATIC_URL = '/static/'
 STATIC_ROOT = BASE_DIR / 'staticfiles'
 
+import tempfile
+if not DEBUG:
+    STATIC_ROOT = tempfile.mkdtemp()
+
 LOGIN_REDIRECT_URL = 'learning_logs:index'
 LOGOUT_REDIRECT_URL = 'learning_logs:index'
 
